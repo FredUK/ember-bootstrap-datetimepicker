@@ -121,6 +121,8 @@ var bsDateTimePickerComponent = Ember.Component.extend({
         config[configKey] = this.getWithDefault(configKey, datetimepickerDefaultConfig[configKey]);
       }
     }
+    
+    config.ignoreReadonly = true;
 
     return config;
   }
